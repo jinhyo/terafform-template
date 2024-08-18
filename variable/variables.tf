@@ -104,3 +104,9 @@ resource "aws_instance" "ec2" {
 
   count = 1
 }
+
+# with cli argument
+# terraform plan -var="filename='/tmp/world.txt'" -var="content='hi hi hi'"
+
+# with environment variable
+# export TF_VAR_filename=/tmp/world1.txt && terraform plan
